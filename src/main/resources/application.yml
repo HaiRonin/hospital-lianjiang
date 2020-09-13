@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  type-aliases-package: com.jingbao.entity.model
+  mapper-locations: classpath*:com/jingbao/mapper/*.xml
+
+
+#逻辑删除配置
+mybatis-plus:
+  global-config:
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+    #配置逻辑删除字段为1是删除
+    logic-delete-value: 1
+    #配置逻辑删除字段为0是未删除
+    logic-not-delete-value: 0

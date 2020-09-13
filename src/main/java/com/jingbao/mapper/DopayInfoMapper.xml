@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingbao.dao.DopayInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jingbao.entity.model.DopayInfo">
+        <id column="id" property="id" />
+        <result column="syn_user_name" property="synUserName" />
+        <result column="syn_key" property="synKey" />
+        <result column="hi_fee_nos" property="hiFeeNos" />
+        <result column="pay_record" property="payRecord" />
+        <result column="pay_money" property="payMoney" />
+        <result column="socialsecurityNO" property="socialsecurityNO" />
+        <result column="over_record" property="overRecord" />
+        <result column="over_money" property="overMoney" />
+        <result column="medicare_return" property="medicareReturn" />
+        <result column="bank_return" property="bankReturn" />
+        <result column="terminal_code" property="terminalCode" />
+        <result column="user_no" property="userNo" />
+        <result column="medicare_type" property="medicareType" />
+        <result column="app_id" property="appId" />
+        <result column="creat_time" property="creatTime" />
+        <result column="pay_type" property="payType" />
+        <result column="successful_payment" property="successfulPayment" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="transaction_id" property="transactionId" />
+    </resultMap>
+
+</mapper>

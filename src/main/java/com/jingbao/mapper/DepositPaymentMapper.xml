@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingbao.dao.DepositPaymentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jingbao.entity.model.DepositPayment">
+        <id column="id" property="id" />
+        <result column="in_hos_no" property="inHosNo" />
+        <result column="bed_no" property="bedNo" />
+        <result column="pay_type" property="payType" />
+        <result column="pay_record" property="payRecord" />
+        <result column="pay_money" property="payMoney" />
+        <result column="successful_payment" property="successfulPayment" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="creat_time" property="creatTime" />
+        <result column="appid" property="appid" />
+    </resultMap>
+
+</mapper>

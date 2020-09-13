@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingbao.dao.SymptomsOrganMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jingbao.entity.model.SymptomsOrgan">
+        <id column="id" property="id" />
+        <result column="sex" property="sex" />
+        <result column="body_part" property="bodyPart" />
+        <result column="symptoms" property="symptoms" />
+        <result column="organ_name" property="organName" />
+        <result column="organ_id" property="organId" />
+    </resultMap>
+
+</mapper>

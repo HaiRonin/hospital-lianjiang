@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingbao.dao.DoregInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jingbao.entity.model.DoregInfo">
+        <id column="id" property="id" />
+        <result column="organdoctor_id" property="organdoctorId" />
+        <result column="card_no" property="cardNo" />
+        <result column="patient_no" property="patientNo" />
+        <result column="socialsecurityNO" property="socialsecurityNO" />
+        <result column="source_date" property="sourceDate" />
+        <result column="timestype_no" property="timestypeNo" />
+        <result column="source_time_type" property="sourceTimeType" />
+        <result column="pay_no" property="payNo" />
+        <result column="pay_amount" property="payAmount" />
+        <result column="app_id" property="appId" />
+        <result column="creat_time" property="creatTime" />
+        <result column="successful_payment" property="successfulPayment" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="departmentorgan_id" property="departmentorganId" />
+        <result column="pay_type" property="payType" />
+        <result column="result_msg" property="resultMsg" />
+    </resultMap>
+
+</mapper>
