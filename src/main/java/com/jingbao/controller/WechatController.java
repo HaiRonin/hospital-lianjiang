@@ -323,7 +323,7 @@ public class WechatController {
                         dopayInfo.setOutTradeNo(orderNo);
                         wntityWrapper.setEntity(dopayInfo);
                         DopayInfo dopayInfoNew = dopayInfoService.selectOne(wntityWrapper);
-                        Map<String, Object> getInfo = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(dopayInfoNew.getPayMoney()));
+                        Map<String, Object> getInfo = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(wpr.getTotal_fee()/100));
                         if(getInfo.get("code").equals("SUCCESS")) {
 //                            //更新本地数据库
 //                            EntityWrapper<DopayInfo> wntityWrapper = new EntityWrapper<>();
