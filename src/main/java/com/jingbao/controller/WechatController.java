@@ -290,7 +290,7 @@ public class WechatController {
                         wntityWrapperDoregInfo.setEntity(doregInfo);
                         DoregInfo doregInfoNew = doregInfoService.selectOne(wntityWrapperDoregInfo);
                         //String.valueOf(doregInfoNew.getPayAmount())
-                        Map<String, Object> info = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(String.valueOf(wpr.getTotal_fee()/100)));
+                        Map<String, Object> info = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(wpr.getTotal_fee()/100));
                         if(info.get("code").equals("SUCCESS")){
                            boolean updateInfo = doregInfoService.updateRegInfoSuccessfulPayment(orderNo);
                             if (updateInfo) {
@@ -360,7 +360,7 @@ public class WechatController {
                         wntityWrapperDepositPayment.setEntity(depositPaymentInfo);
                         DepositPayment depositPayment = depositPaymentService.selectOne(wntityWrapperDepositPayment);
                         //String.valueOf(depositPayment.getPayAmount())
-                        Map<String, Object> info = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(String.valueOf(wpr.getTotal_fee()/100)));
+                        Map<String, Object> info = iWechatService.refund(wpr.getTransaction_id(),String.valueOf(wpr.getTotal_fee()/100));
                         if(info.get("code").equals("SUCCESS")){
                             boolean updateInfo = depositPaymentService.updateDepositPaymentSuccessfulPayment(orderNo);
                             if (updateInfo) {
