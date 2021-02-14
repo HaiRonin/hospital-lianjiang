@@ -80,7 +80,7 @@ public class JedisUtil {
             config.setMaxIdle(MAX_IDLE);
             config.setMaxWaitMillis(MAX_WAIT);
             config.setTestOnBorrow(TEST_ON_BORROW);
-            config.setTestOnReturn(TEST_ON_RETURN);
+//            config.setTestOnReturn(TEST_ON_RETURN);
 
             //false:如果连接池没有可用Jedis连接，立即抛出异常;默认true时：如果连接池没有可用Jedis连接，
             //会等待maxWaitMillis(毫秒)，依然没有获取到可用Jedis连接
